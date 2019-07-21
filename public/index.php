@@ -14,12 +14,7 @@ echo $twig->render('index.html.twig', array('products1' => 'banane'));
 }*/
 
 $template = $twig->loadTemplate('index.html.twig');
-$products = array(
-array('fruit_1'=>'banane', 
-'fruit_2'=>'fraise', 
-'fruit_3'=>'melon', 
-'fruit_4'=>'avocat', 
-'fruit_5'=>'tomates'));
+$products = ['product1', 'product2', 'product3', 'product4', 'product5'];
 
 echo $template->render(array('products'=> $products)); 
 ?>
